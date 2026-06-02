@@ -8,6 +8,18 @@ A fully static React + Vite web app that analyses any AI prompt and scores it ac
 
 ---
 
+## Part of a Trilogy
+
+Each project in this series teaches a different way to think about AI prompts and behaviour:
+
+| Project | Approach | What it teaches |
+|---|---|---|
+| **prompt-quality-checker** | Regex heuristics | Is my prompt structurally well-formed? |
+| [ai-trust-chat](https://github.com/sarathmarson/ai-trust-chat) | Live system prompt manipulation | How do AI trust levels change behaviour? |
+| [semantic-prompt-rewriter](https://github.com/SarathMarson7/semantic-prompt-rewriter) | Real AI semantic understanding | What does my prompt actually mean to an AI? |
+
+---
+
 ## Screenshots
 
 ### Strong Prompt — 98 / 100
@@ -163,3 +175,9 @@ The scoring engine (`scorer.js`) is a **pure function** — same input always pr
 `App.jsx` holds all state: the prompt text, the current theme, and the debounced score result. The two panels (`PromptInput`, `ScorePanel`) are purely presentational — they receive data via props and emit changes via callbacks.
 
 CSS custom properties on the root `div[data-theme]` element drive all three themes. Switching themes updates a single attribute; all colours cascade automatically via `var()` references.
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE) for details.
